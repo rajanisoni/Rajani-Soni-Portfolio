@@ -271,14 +271,16 @@ body::-webkit-scrollbar {
 
 .slide:nth-child(1) {
     background: url("images/Design\ Image\ \(3\).jpg");
+    margin: 0;
 }
 
 .slide:nth-child(2) {
-    background: url("images/Group\ 27.png")
+    background: url("images/Group\ 27.png");
+    margin: 0;
 }
 
 .slide:nth-child(3) {
-    background-color: #6a478f;
+    background-color: #189c96;
     margin: 0;
 }
 
@@ -312,6 +314,7 @@ body::-webkit-scrollbar {
 }
 
 .view-btn {
+    cursor: pointer;
     background: #0B706C;
     border-radius: 21.5909px;
     font-weight: 700;
