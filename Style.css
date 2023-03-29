@@ -1,0 +1,409 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Microsoft Tai Le';
+}
+
+
+/* Scrollbar hide */
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ..........Top Section.......... */
+
+.top-container {
+    height: 1530px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    background: linear-gradient(179.65deg, #8DE8EE 32.09%, #FEFFFF 104.76%);
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icons */
+
+.rocket {
+    top: 47px;
+    z-index: 2;
+    position: absolute;
+}
+
+.rocket-background {
+    position: relative;
+    width: 66px;
+    height: 103px;
+    top: 45px;
+    left: -2px;
+    top: 9.25em;
+    background: #EBFCFD;
+    border-radius: 37px;
+    z-index: 1;
+}
+
+/* ................ */
+.allclouds {
+    top: 6em;
+    flex-direction: column;
+}
+
+.cloud1 {
+    position: relative;
+    width: 100.02px;
+    left: 24em;
+}
+
+.cloud2 {
+    position: relative;
+    width: 159.79px;
+    top: 1em;
+    right: 31em;
+}
+
+.cloud3 {
+    position: relative;
+    height: 73.06px;
+    left: 30em;
+    top: 6em;
+}
+
+.cloud4 {
+    position: relative;
+    width: 113px;
+    top: 10em;
+    right: 27em;
+}
+
+.cloud5 {
+
+    position: relative;
+    width: 167.28px;
+    left: 22em;
+    top: 21em;
+}
+
+.name {
+    margin: 0;
+    top: 20px;
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 92.4706px;
+    color: #0B706C;
+}
+
+.webdesign {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 25.7538px;
+    color: #0B706C;
+}
+
+
+
+/* ........About.......... */
+
+.about {
+    width: 70em;
+    margin: auto;
+    margin-top: -30em;
+    margin-bottom: 3em;
+    flex-direction: row;
+    gap: 3.5em;
+    text-align: left;
+}
+
+
+.image-logos {
+    flex-direction: column;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    width: 19em;
+}
+
+
+.abouts-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.about-me-text {
+    font-size: 23px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #11918C;
+    margin: 0;
+}
+
+/* ...........................................Skills */
+
+
+.skills {
+    background: #f4fdfd;
+    padding: 10em;
+    padding-top: 11em;
+}
+
+.skill-logos {
+    margin-top: 5em;
+    gap: 3em;
+}
+
+.learning {
+    margin-top: 4em;
+    gap: 1em;
+}
+
+.learning-text {
+    color: #0B706C;
+}
+
+.Montserrat {
+    font-family: 'Montserrat';
+}
+
+.avatar-div {
+    margin: auto;
+    margin-top: -15em;
+}
+
+.avatar-img {
+    position: relative;
+    height: 230px;
+    left: 35em;
+    top: 8em;
+}
+
+
+
+/* ....................................Projects */
+
+.figmah1 {
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 54px;
+    color: #0B706C;
+    margin: 0;
+}
+
+.projects {
+    background: #f4fdfd;
+    padding: 10em;
+}
+
+.slider-wrapper {
+    width: 52em;
+    margin: auto;
+    margin-top: 6em;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 10px #82CCCA);
+    border-radius: 25px;
+
+}
+
+.slides-container {
+    height: 33em;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: #c9eef1;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+    opacity: 1;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.slide:nth-child(1) {
+    background: url("images/Design\ Image\ \(3\).jpg");
+}
+
+.slide:nth-child(2) {
+    background: url("images/Group\ 27.png")
+}
+
+.slide:nth-child(3) {
+    background-color: #6a478f;
+    margin: 0;
+}
+
+.slide:nth-child(4) {
+    background-color: #da6f2b;
+}
+
+/* WebKit */
+.slides-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.description {
+    width: 100%;
+    height: 8em;
+    background: rgba(126, 207, 213, 0.93);
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-name {
+    font-size: 26px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.52);
+}
+
+.view-btn {
+    background: #0B706C;
+    border-radius: 21.5909px;
+    font-weight: 700;
+    font-size: 22px;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 28px 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+/* ..........Resume.............. */
+
+.resume {
+    flex-direction: row;
+    gap: 1em;
+    padding-bottom: 8em;
+    font-family: 'Montserrat';
+    background: #f4fdfd;
+    color: #0B706C;
+}
+
+
+.download {
+    width: 45px;
+}
+
+/* ..........................................footer */
+
+
+.bottom-container {
+    background: linear-gradient(360deg, #8DE9EF -22.41%, rgba(141, 233, 239, 0) 161.98%);
+    padding-top: 9em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 73em;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.copyright-text {
+    font-style: normal;
+    margin-left: 15px;
+    line-height: 36px;
+
+    color: #0B706C;
+}
+
+.copyright-text>h2 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.copyright-text>p {
+    margin: 0;
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+.social {
+    flex-direction: column;
+}
+
+.social-text {
+    margin: 0;
+    font-size: 23px;
+    line-height: 30px;
+
+    color: #0B706C;
+
+}
+
+.social-logos-footer {
+    gap: 20px;
+}
+
+.footer-text {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B706C;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
