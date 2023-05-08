@@ -20,11 +20,13 @@ body::-webkit-scrollbar {
 /* ..........Top Section.......... */
 
 .top-container {
+    /* width: 100%; */
     height: 1530px;
     left: 0px;
     top: 0px;
     display: flex;
     background: linear-gradient(179.65deg, #8DE8EE 32.09%, #FEFFFF 104.76%);
+    /* background-size: contain; */
     flex-direction: column;
     align-items: center;
 }
@@ -134,7 +136,7 @@ body::-webkit-scrollbar {
 }
 
 
-.abouts-flex {
+.about-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -402,9 +404,7 @@ body::-webkit-scrollbar {
     margin: 0;
     font-size: 23px;
     line-height: 30px;
-
     color: #0B706C;
-
 }
 
 .social-logos-footer {
@@ -417,4 +417,105 @@ body::-webkit-scrollbar {
     color: #0B706C;
     margin-top: 4em;
     margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #f4fdfd;
+    }
+
+    .wrapper {
+        overflow: hidden;
+    }
+
+    .top-container {
+        width: auto;
+        height: 110em;
+        gap: 25em;
+    }
+
+    .about {
+        width: auto;
+        margin-top: -48em;
+        flex-direction: column;
+        scale: 0.9;
+        gap: 4.5em;
+        text-align: center;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        scale: 0.9;
+    }
+
+
+    .about-me-text {
+        font-size: 21px;
+    }
+
+    .skills {
+        background: #f4fdfd;
+        scale: 0.8;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        scale: 0.8;
+        padding: 0;
+        padding-top: 10em;
+        padding-bottom: 0;
+    }
+
+    .slider-wrapper {
+        scale: 0.7;
+        margin: 0;
+    }
+
+    .resume {
+        flex-direction: row;
+        gap: 1em;
+        padding-bottom: 8em;
+        font-family: 'Montserrat';
+        background: #f4fdfd;
+        color: #0B706C;
+    }
+
+    .bottom-container {
+        padding-top: 5em;
+    }
+
+    .container {
+        scale: 0.9;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 6em;
+
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .allclouds {
+        display: none;
+    }
+
+    .avatar-div {
+        width: fit-content;
+    }
+
+    .avatar-img {
+        z-index: 1;
+        position: relative;
+        height: 175px;
+        left: 10em;
+        top: 8em;
+    }
+
 }
